@@ -9,6 +9,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'hash', // 'history'
   base: '/', // base: '/app/',
+  scrollBehavior: () => ({ y: 0 }),
   routes
 })
 

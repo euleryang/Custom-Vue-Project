@@ -17,119 +17,136 @@ const ASYNC_ROUTES = [
     name: 'dashboard',
     component: () => import('@/views/dashboard/Index'),
     meta: {
-      permitCode: 'page:dashboard'
+      permitCode: 'page:dashboard',
+      title: 'dashboard'
     }
   }, {
     path: '/workspace',
     name: 'workspace',
     component: () => import('@/views/workspace/Index'),
     meta: {
-      permitCode: 'page:workspace'
+      permitCode: 'page:workspace',
+      title: 'workspace'
     }
   }, {
     path: '/form',
     name: 'form',
     // redirect: 'form-basic', // 未配置component或者redirect 则自动设置第一个权限路由
     meta: {
-      permitCode: 'page:form'
+      permitCode: 'page:form',
+      title: 'form'
     }
   }, {
     path: '/form-basic',
     name: 'form-basic',
     component: () => import('@/views/form/BasicForm'),
     meta: {
-      permitCode: 'page:form-basic'
+      permitCode: 'page:form-basic',
+      title: 'form-basic'
     }
   }, {
     path: '/form-step',
     name: 'form-step',
     component: () => import('@/views/form/StepForm'),
     meta: {
-      permitCode: 'page:form-step'
+      permitCode: 'page:form-step',
+      title: 'form-step'
     }
   }, {
     path: '/form-complex',
     name: 'form-complex',
     component: () => import('@/views/form/ComplexForm'),
     meta: {
-      permitCode: 'page:form-complex'
+      permitCode: 'page:form-complex',
+      title: 'form-complex'
     }
   }, {
     path: '/detail',
     name: 'detail',
     // redirect: 'detail-basic', // 未配置component或者redirect 则自动设置第一个权限路由
     meta: {
-      permitCode: 'page:detail'
+      permitCode: 'page:detail',
+      title: 'detail'
     }
   }, {
     path: '/detail-basic',
     name: 'detail-basic',
     component: () => import('@/views/detail/BasicDetail'),
     meta: {
-      permitCode: 'page:detail-basic'
+      permitCode: 'page:detail-basic',
+      title: 'detail-basic'
     }
   }, {
     path: '/detail-complex',
     name: 'detail-complex',
     component: () => import('@/views/detail/ComplexDetail'),
     meta: {
-      permitCode: 'page:detail-complex'
+      permitCode: 'page:detail-complex',
+      title: 'detail-complex'
     }
   }, {
     path: '/error',
     name: 'error',
     // redirect: 'form-basic', // 未配置component或者redirect 则自动设置第一个权限路由
     meta: {
-      permitCode: 'page:error'
+      permitCode: 'page:error',
+      title: 'error'
     }
   }, {
     path: '/error-404',
     name: 'error-404',
     component: () => import('@/views/error/404'),
     meta: {
-      permitCode: 'page:error-404'
+      permitCode: 'page:error-404',
+      title: 'error-404'
     }
   }, {
     path: '/error-403',
     name: 'error-403',
     component: () => import('@/views/error/403'),
     meta: {
-      permitCode: 'page:error-403'
+      permitCode: 'page:error-403',
+      title: 'error-403'
     }
   }, {
     path: '/error-500',
     name: 'error-500',
     component: () => import('@/views/error/500'),
     meta: {
-      permitCode: 'page:error-500'
+      permitCode: 'page:error-500',
+      title: 'error-500'
     }
   }, {
     path: '/list',
     name: 'list',
     // redirect: 'list-basic', // 未配置component或者redirect 则自动设置第一个权限路由
     meta: {
-      permitCode: 'page:list'
+      permitCode: 'page:list',
+      title: 'list'
     }
   }, {
     path: '/list-search',
     name: 'list-search',
     component: () => import('@/views/list/SearchList'),
     meta: {
-      permitCode: 'page:list-search'
+      permitCode: 'page:list-search',
+      title: 'list-search'
     }
   }, {
     path: '/table-search',
     name: 'table-search',
     component: () => import('@/views/list/SearchTable'),
     meta: {
-      permitCode: 'page:table-search'
+      permitCode: 'page:table-search',
+      title: 'table-search'
     }
   }, {
     path: '/list-infinite-scroll',
     name: 'list-infinite-scroll',
     component: () => import('@/views/list/InfiniteScrollList'),
     meta: {
-      permitCode: 'page:list-infinite-scroll'
+      permitCode: 'page:list-infinite-scroll',
+      title: 'list-infinite-scroll'
     }
   }
 ]
