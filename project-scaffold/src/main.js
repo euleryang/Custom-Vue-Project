@@ -7,6 +7,7 @@ import $api from '@/api'
 import axios from '@/plugins/axios'
 import Antd from 'ant-design-vue'
 import PageScrollable from '@/components/pageScrollable'
+import MultiTab from '@/components/MultiTab'
 import Permit from '@/directives/permit'
 import havePermission from '@/utils/permission'
 import '@/icons' // svg-icon
@@ -18,6 +19,7 @@ import '@/mock'
 // 使用插件
 Vue.use(Antd)
 Vue.use(PageScrollable)
+Vue.use(MultiTab)
 Vue.config.productionTip = false
 
 // 添加实例方法

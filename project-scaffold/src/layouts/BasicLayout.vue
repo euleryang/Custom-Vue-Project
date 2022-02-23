@@ -13,8 +13,11 @@
         <global-sider></global-sider>
       </a-layout-sider>
       <a-layout-content class="wsd-basic-content">
+        <multi-tab></multi-tab>
         <transition name="slide-fade">
-          <router-view></router-view>
+          <keep-alive>
+            <router-view></router-view>
+          </keep-alive>
         </transition>
       </a-layout-content>
     </a-layout>
